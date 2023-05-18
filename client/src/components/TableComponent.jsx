@@ -3,11 +3,11 @@ import { DataGrid } from '@mui/x-data-grid';
 
 const TableComponent = (props) => {
   
-  const {columns, rows} = props;
+  const {columns, rows, style} = props;
   
   return (
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid columns={columns} rows={rows} />
+    <div style={style}>
+      <DataGrid columns={columns} rows={rows}  />
     </div>
   );
 };
