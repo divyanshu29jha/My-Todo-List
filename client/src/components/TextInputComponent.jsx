@@ -7,7 +7,7 @@ const TextInput = (props) => {
     
     return (
       <div>
-          <TextField styling={styling} onChange={actionOnChange} value={value} placeholder={placeholder} id="text-input" variant={variant} />
+          <TextField id="text-input" styling={styling} onChange={actionOnChange} value={value} placeholder={placeholder} variant={variant} />
       </div>
     );
 }
