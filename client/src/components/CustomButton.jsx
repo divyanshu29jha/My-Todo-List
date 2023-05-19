@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 
 function CustomButton(props) {
-    let{color="blue",text="submit",onClickAction=()=>{console.log("submitted")}}=props
+    let{color="blue",text="submit",variant="contained",onClickAction=()=>{}}=props
   const handleClick = () => {
     if (typeof onClickAction === 'function') {
      onClickAction();
@@ -10,7 +10,7 @@ function CustomButton(props) {
   };
 
   return (
-    <Button variant="contained" color={color} onClick={handleClick}>
+    <Button variant={variant} color={color} onClick={handleClick}>
       {text}
     </Button>
   );
