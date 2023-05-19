@@ -6,6 +6,7 @@ const Loader = (props) => {
   
     const {color="success", sx={ color: 'grey.500' }} = props;
   
+    
     return (
     <Stack sx={sx}>
       <CircularProgress color={color} />
