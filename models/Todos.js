@@ -19,4 +19,5 @@ const TodosSchema = new Schema(
 
 TodosSchema.index({ title: 1 }, { unique: true });
 
-module.exports = Todos = mongoose.model("todos", TodosSchema);
+let Todos = mongoose.model("todos", TodosSchema);
+module.exports = Todos;
